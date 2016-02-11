@@ -1,0 +1,20 @@
+{
+  "name": "quartertwo",
+  "version": "0.0.0",
+  "authors": [ "Michael Sheedy <git@michaelsheedy.com>" ],
+  "description": "Homepage for quartertwo.com",
+  "license": "MIT",
+  "homepage": "http://quartertwo.com",
+  "ignore": [
+  "**/.*",
+  "node_modules",
+  "bower_components",
+  "test",
+  "tests"
+  ],
+  "devDependencies": {
+    "vivus": "^0.3.0",
+    "normalize-strings": "normalize#^1.0.4",
+    "normalize-scss": "^3.0.3"
+  }
+}
