@@ -5,26 +5,37 @@
 }
 
 @media (min-width: 540px) {
+  // svg {
+  //   top: 20px;
+  // }
   .svg-container{
-    width: 474px;
-    padding-top: 200px;
+    width: 70%;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 720px;
+  // svg {
+  //   top: 60px;
+  // }
+  .svg-container {
+    width: 60%;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
+  // svg {
+  //   top: 80px;
+  // }
+  .svg-container {
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+  // svg {
+  //   top: 100px;
+  // }
+  .svg-container {
+    width: 50%;
   }
 }
