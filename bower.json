@@ -14,7 +14,6 @@
   ],
   "devDependencies": {
     "vivus": "^0.3.0",
-    "normalize-strings": "normalize#^1.0.4",
     "normalize-scss": "^3.0.3"
   }
 }
