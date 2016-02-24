@@ -29,26 +29,28 @@ module.exports = {
   },
 
   build: {
-    files: [{
-      expand: true,
-      flatten: true,
-      dot: true,
-      cwd: 'vendor/bower_components/',
-      dest: '<%= build %>/vendor',
-      src: [
-        'vivus/dist/vivus.min.js'
-      ]
-    }],
-    files: [{
-      expand: true,
-      flatten: true,
-      dot: true,
-      cwd: '.',
-      dest: '<%= build %>/',
-      src: [
-        'CNAME'
-      ]
-    }]
+    files: [
+      {
+        expand: true,
+        flatten: true,
+        dot: true,
+        cwd: 'vendor/bower_components/',
+        dest: '<%= build %>/vendor',
+        src: [
+          'vivus/dist/vivus.min.js'
+        ]
+      },
+      {
+        expand: true,
+        flatten: true,
+        dot: true,
+        cwd: '.',
+        dest: '<%= build %>/',
+        src: [
+          'CNAME'
+        ]
+      }
+    ]
   },
 
 }
