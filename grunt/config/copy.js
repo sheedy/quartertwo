@@ -28,7 +28,7 @@ module.exports = {
     }]
   },
 
-  vendor_build: {
+  build: {
     files: [{
       expand: true,
       flatten: true,
@@ -37,6 +37,16 @@ module.exports = {
       dest: '<%= build %>/vendor',
       src: [
         'vivus/dist/vivus.min.js'
+      ]
+    }],
+    files: [{
+      expand: true,
+      flatten: true,
+      dot: true,
+      cwd: '.',
+      dest: '<%= build %>/',
+      src: [
+        'CNAME'
       ]
     }]
   },

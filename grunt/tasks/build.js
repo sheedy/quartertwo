@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:build',
       'sass:build',
-      'copy:vendor_build',
+      'copy:build',
       'imagemin',
       'cssmin',
       'prettify',
