@@ -7,11 +7,9 @@ new Vivus('six-logo', {
   pathTimingFunction: Vivus.EASE_OUT
 }, function (obj) {
   obj.el.classList.add('finished');
+  mark.className += ' finished';
 
   setTimeout(function() {
-    mark.className += ' finished';
-  }, 1000);
-  setTimeout(function() {
     shop.className += ' finished';
-  }, 2000);
+  }, 500);
 });
