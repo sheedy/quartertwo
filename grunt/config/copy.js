@@ -7,21 +7,10 @@ module.exports = {
       cwd: '<%= src %>',
       dest: '<%= temp %>',
       src: [
-      '*.html',
-      '../vendor/**/*',
-      'js/**/*'
-      ]
-    }]
-  },
-
-  images: {
-    files: [{
-      expand: true,
-      dot: true,
-      cwd: '<%= src %>/images',
-      dest: '<%= temp %>/images',
-      src: [
-      '{!(svg-src),!(svg-build),**}/**'
+        '*.html',
+        // '../vendor/**/*',
+        'js/**/*',
+        'images/{!(svg-src),!(svg-build),**}/**'
       ]
     }]
   },
@@ -29,10 +18,26 @@ module.exports = {
   vendor: {
     files: [{
       expand: true,
+      flatten: true,
       dot: true,
-      cwd: 'vendor/bower_components',
+      cwd: 'vendor/bower_components/',
       dest: '<%= temp %>/vendor',
-      src: [ '**/*' ]
+      src: [
+        'vivus/dist/vivus.min.js'
+      ]
+    }]
+  },
+
+  vendor_build: {
+    files: [{
+      expand: true,
+      flatten: true,
+      dot: true,
+      cwd: 'vendor/bower_components/',
+      dest: '<%= build %>/vendor',
+      src: [
+        'vivus/dist/vivus.min.js'
+      ]
     }]
   },
 
