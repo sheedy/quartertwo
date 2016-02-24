@@ -9,12 +9,12 @@ body{
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .svg-container {
   position: relative;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
 }
 
 svg {
@@ -25,7 +25,7 @@ svg {
   #path-2 {
     fill-opacity: 0;
     fill: #fff;
-    transition: fill-opacity 1.25s, stroke 1.25s;
+    transition: fill-opacity 1.25s ease-out, stroke 1.25s ease-out;
   }
 
   &.finished {
@@ -71,9 +71,9 @@ svg {
 
 .collection-mark {
   opacity: 0;
-  transition: opacity 1s, transform 1s;
+  transition: opacity 1s ease-out, transform 1s ease-out;
   transform: translateY(80px);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   &.finished {
     opacity: 1;
@@ -98,8 +98,9 @@ svg {
   text-align: center;
   display: inline-block;
   border: 1px solid #fff;
-  transition: opacity 1s;
+  transition: opacity 1s ease-out;
   opacity: 0;
+  cursor: pointer;
 
   &.finished {
     opacity: 1;

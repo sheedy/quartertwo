@@ -6,7 +6,7 @@ module.exports = {
 
   my_target: {
     files: {
-      '<%= build %>/js/script.min.js': [
+      '<%= build %>/js/script.js': [
       '<%= src %>/js/script.js'
       ]
     }

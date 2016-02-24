@@ -64,8 +64,8 @@ module.exports = {
   },
 
   copy: {
-    files: [ '*.html', '**/*.png', '**/*.svg', 'js/*.js' ],
-    tasks: [ 'copy' ],
+    files: [ '<%= src %>/*.html', '<%= src %>/**/*.{png,svg}', '<%= src %>/js/*.js' ],
+    tasks: [ 'copy:all', 'copy:vendor' ],
     options: {
       nospawn: true // only reload the css, not the page
     }
