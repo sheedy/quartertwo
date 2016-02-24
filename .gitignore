@@ -46,6 +46,7 @@ Thumbs.db
 Icon?
 svg-build/
 /svg
+.env
 
 ###Node###
 
