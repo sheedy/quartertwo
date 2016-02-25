@@ -1,12 +1,14 @@
 module.exports = {
 
+  options: {
+    config: '.prettifyrc'
+  },
   build: {
-    options: {
-      config: '.prettifyrc'
-    },
-    files: {
-      '<%= build %>/index.html': ['<%= src %>/index.html']
-    }
+    expand: true,
+    ext: '.html',
+    cwd: '<%= src %>/',
+    src: ['**/*.html'],
+    dest: '<%= build %>/'
   }
 
 }
