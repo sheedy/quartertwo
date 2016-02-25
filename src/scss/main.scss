@@ -17,9 +17,6 @@ body{
   margin: 0 auto 20px;
 }
 
-svg {
-}
-
 #six-logo {
   #path-1,
   #path-2 {
@@ -35,6 +32,7 @@ svg {
       fill-opacity: 1;
       stroke: #fff;
     }
+
     * {
       stroke: #fff;
     }
@@ -98,12 +96,18 @@ svg {
   text-align: center;
   display: inline-block;
   border: 1px solid #fff;
-  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out, color .4s ease-out, background-color .4s ease-out;
   opacity: 0;
   cursor: pointer;
+  text-decoration: none;
 
   &.finished {
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
   }
 
   &--centered {
@@ -128,17 +132,13 @@ svg {
   display: table; /* 2 */
 }
 
-.cf:after {
-  clear: both;
-}
+.cf:after { clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
- .cf {
-  *zoom: 1;
-}
+ .cf { *zoom: 1; }
 
 
-@import "media";
+ @import "media";
